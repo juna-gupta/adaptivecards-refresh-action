@@ -1,0 +1,26 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "refresh": {
+    "action": {
+      "type": "Action.Execute",
+      "title": "Refresh",
+      "verb": "UserSpecificView",
+      "data": {
+        "refreshCount": "${count}",
+      },
+      "userIds": [ "${userUpn}" ]
+    }
+  },
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "User Specific View Card"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Refresh Count - ${count}"
+    }
+  ]
+}

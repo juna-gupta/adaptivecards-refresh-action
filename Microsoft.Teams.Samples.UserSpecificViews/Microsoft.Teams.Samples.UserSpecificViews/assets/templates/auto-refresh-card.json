@@ -1,0 +1,25 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "refresh": {
+    "action": {
+      "type": "Action.Execute",
+      "title": "Refresh",
+      "verb": "AutoRefresh",
+      "data": {
+        "refreshCount": "${count}"
+      }
+    }
+  },
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Auto Refresh Card"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Refresh Count - ${count}"
+    }
+  ]
+}

@@ -51,7 +51,7 @@ namespace Microsoft.Teams.Samples.UserSpecificViews.Bot
             }
             else
             {
-                await turnContext.SendActivityAsync("Try 'refreshCard' or 'usv' commands.", cancellationToken: cancellationToken);
+                await turnContext.SendActivityAsync("Try 'ar' or 'usv' commands.", cancellationToken: cancellationToken);
             }
         }
 

@@ -11,7 +11,6 @@ namespace Microsoft.Teams.Samples.UserSpecificViews.Bot
     using Microsoft.Extensions.Logging;
     using Microsoft.Teams.Samples.UserSpecificViews.Cards;
     using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
 
     /// <summary>
     /// Teams Bot Activity Handler.
@@ -71,7 +70,6 @@ namespace Microsoft.Teams.Samples.UserSpecificViews.Bot
                                 Value = card.Content
                             };
                             return ActivityHandler.CreateInvokeResponse(newCardResponse);
-                        break;
 
                     case "UserSpecificView":
                             var member = await TeamsInfo.GetMemberAsync(turnContext, turnContext.Activity.From.Id, cancellationToken);
@@ -83,7 +81,6 @@ namespace Microsoft.Teams.Samples.UserSpecificViews.Bot
                                 Value = card.Content
                             };
                             return ActivityHandler.CreateInvokeResponse(newCardResponse);
-                        break;
                 }
             }
 

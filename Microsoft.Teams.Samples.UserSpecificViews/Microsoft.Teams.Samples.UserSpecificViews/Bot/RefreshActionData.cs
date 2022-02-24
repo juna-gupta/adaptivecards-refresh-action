@@ -27,6 +27,6 @@
     {
         public int RefreshCount { get; set; }
 
-        public string ShouldRefresh { get; set; }
+        public string CardType { get; set; }
     }
 }
